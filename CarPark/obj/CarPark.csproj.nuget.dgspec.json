@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "E:\\project\\Visual\\CarPark\\CarPark\\CarPark.csproj": {}
+    "E:\\project\\Visual\\XML\\CarPark\\CarPark.csproj": {}
   },
   "projects": {
-    "E:\\project\\Visual\\CarPark\\CarPark\\CarPark.csproj": {
+    "E:\\project\\Visual\\XML\\CarPark\\CarPark.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "E:\\project\\Visual\\CarPark\\CarPark\\CarPark.csproj",
+        "projectUniqueName": "E:\\project\\Visual\\XML\\CarPark\\CarPark.csproj",
         "projectName": "CarPark",
-        "projectPath": "E:\\project\\Visual\\CarPark\\CarPark\\CarPark.csproj",
+        "projectPath": "E:\\project\\Visual\\XML\\CarPark\\CarPark.csproj",
         "packagesPath": "C:\\Users\\я\\.nuget\\packages\\",
-        "outputPath": "E:\\project\\Visual\\CarPark\\CarPark\\obj\\",
+        "outputPath": "E:\\project\\Visual\\XML\\CarPark\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\я\\AppData\\Roaming\\NuGet\\NuGet.Config",

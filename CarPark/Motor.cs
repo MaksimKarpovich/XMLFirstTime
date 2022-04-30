@@ -1,34 +1,50 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Linq;
 using System.Text;
+using System.Threading.Tasks;
 
-namespace CarPark
+namespace XMLFirstTime
 {
     /// <summary>
     /// Класс, описывающий элемент двигатель
     /// </summary>
     internal class Motor
     {
-        private double Power = 0;
-        private double Volume = 0;
-        private string Type = "";
-        private string SerialNumer = "";
+        public double Power = 0;
+        public double Volume = 0;
+        public string Type = "";
+        public string SerialNumer = "";
 
         public Motor(double Power, double Volume, string Type, string Serial) 
         {
-            this.Power = Power;
-            this.Volume = Volume;
+            if (Power > 0)
+            {
+                this.Power = Power;
+            }
+            else { Console.WriteLine("Введено некорректное значение мощности двигателя."); }
+
+            if (Volume > 0)
+            {
+                this.Volume = Volume;
+            }
+            else { Console.WriteLine("Введено некорректное значение объёма двигателя."); }
+
             this.Type = Type;
             this.SerialNumer = Serial;
         }
 
-        public void Info() 
+        public void Info()
         {
-            Console.WriteLine("Параметры двигателя:");
-            Console.WriteLine("\tМощность \t\t" + this.Power);
-            Console.WriteLine("\tОбъём \t\t\t" + this.Volume);
-            Console.WriteLine("\tТип \t\t\t" + this.Type);
-            Console.WriteLine("\tСерийный номер \t\t" + this.SerialNumer + "\n");
+            if (this.Power != 0 && this.Volume != 0 && this.Type != "" && this.SerialNumer != "") 
+            { 
+                Console.WriteLine("Параметры двигателя:");
+                Console.WriteLine("\tМощность \t\t" + this.Power);
+                Console.WriteLine("\tОбъём \t\t\t" + this.Volume);
+                Console.WriteLine("\tТип \t\t\t" + this.Type);
+                Console.WriteLine("\tСерийный номер \t\t" + this.SerialNumer + "\n");
+            }
+            else { Console.WriteLine("Неверно введены параметры двигателя.\n"); }
         }
     }
 }
